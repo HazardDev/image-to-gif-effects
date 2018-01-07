@@ -72,7 +72,6 @@ fn main() {
         Some("zoom") => {
             println!("Zooming on out of here!");
             zoom::process(source_image, output_path);
-            println!("Zooming in the here dud!");
         },
         Some("shake") => {
             shake::process(source_image, output_path);
