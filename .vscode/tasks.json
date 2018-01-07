@@ -22,6 +22,12 @@
 			"type": "shell",
 			"taskName": "Test",
 			"command": "rm ./image-to-gif-effects.exe; cp ./target/debug/image-to-gif-effects.exe .; ./image-to-gif-effects.exe -i crow-face.jpg -o test.gif -m zoom",
+			"osx": {
+				"command": "rm ./image-to-gif-effects && cp ./target/debug/image-to-gif-effects . && ./image-to-gif-effects -i crow-face.jpg -o test.gif -m zoom"
+			},
+			"linux": {
+				"command": "rm ./image-to-gif-effects && cp ./target/debug/image-to-gif-effects . && ./image-to-gif-effects -i crow-face.jpg -o test.gif -m zoom"
+			},
 			"problemMatcher": [],
 			"presentation": {
 				"echo": true,
