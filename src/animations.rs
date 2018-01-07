@@ -86,13 +86,13 @@ pub mod zoom {
 
 			let cropped: DynamicImage = resized.crop(0, 0, width, height);
 
-			let mut this_frame = gif::Frame::default();
-			this_frame.height = cropped.height() as u16;
-			this_frame.width = cropped.width() as u16;
-			buffer = cropped.raw_pixels().clone();
-			this_frame.buffer = Cow::Borrowed(buffer.as_slice()); //expects an owned u8 collection [u8]
+			// let mut this_frame = gif::Frame::default();
+			// this_frame.height = cropped.height() as u16;
+			// this_frame.width = cropped.width() as u16;
+			// buffer = cropped.raw_pixels().clone();
+			// this_frame.buffer = Cow::Borrowed(buffer.as_slice()); //expects an owned u8 collection [u8]
 
-			gif_encoder.write_frame(&this_frame).unwrap();
+			// gif_encoder.write_frame(&this_frame).unwrap();
 
 		}
 
